@@ -2,7 +2,6 @@
 
 * {
   font-family: 'Poppins', sans-serif;
-  
 }
 
 .container {
@@ -10,7 +9,6 @@
   background-size: cover;
   display: flex;
   justify-content: center;
-
 }
 
 .header {
@@ -19,24 +17,20 @@
   margin: 20px;
   padding: 20px;
   align-items: center;
-  
 }
 
 .logo {
   color: #091e42;
-
 }
 
 .logo a {
   text-decoration: none;
   color: #091e42;
-
 }
 
 .text-container {
   margin: 0 24px;
   gap: 12px;
-
 }
 
 .text1 {
@@ -46,8 +40,7 @@
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  color:  #172b4d;
-
+  color: #172b4d;
 }
 
 .text2 {
@@ -58,7 +51,6 @@
   font-size: 16px;
   line-height: 24px;
   color: #344563;
-
 }
 
 .text3 button {
@@ -73,25 +65,23 @@
   cursor: pointer;
   border-radius: 10px;
   margin-bottom: 24px;
-
 }
 
 button:hover {
   background-color: transparent;
   border: 1px solid #1a2236;
   color: #1a2236;
-
 }
 
-.social-icons {
+.social-icons ul {
   display: flex;
   justify-content: center;
   gap: 16px;
   margin-left: -160px;
-
+  list-style-type: none;
+  padding: 0;
 }
 
 .social-icons img:hover {
   transform: scale(1.5);
-  
 }
