@@ -6,7 +6,8 @@
 
 .container {
   background-image: url("images/header-shapes\ mobile.png");
-  background-size: cover;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
 }
@@ -17,15 +18,16 @@
   margin: 20px;
   padding: 20px;
   align-items: center;
+  font-size: 24px;
 }
 
-.logo {
-  color: #091e42;
-}
-
-.logo a {
+.header a {
   text-decoration: none;
-  color: #091e42;
+  color: #6070FF;
+}
+
+.headline i {
+  color: #6070FF;
 }
 
 .text-container {
