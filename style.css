@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@400;700&display=swap');
 
 * {
-
   font-family: 'Poppins', sans-serif;
   
 }
@@ -24,14 +23,16 @@
 }
 
 .logo {
-  color: #091E42;
+  color: #091e42;
+
 }
 
 .logo a {
   text-decoration: none;
-  color: #091E42;
+  color: #091e42;
 
 }
+
 .text-container {
   margin: 0 24px;
   gap: 12px;
@@ -45,7 +46,7 @@
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  color:  #172B4D;
+  color:  #172b4d;
 
 }
 
@@ -60,15 +61,15 @@
 
 }
 
- .text3 button {
+.text3 button {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   padding: 12px 30px;
   line-height: 24px;
   color: #ffff;
-  background: #1A2236;
-  border: 1px solid #1A2236;
+  background: #1a2236;
+  border: 1px solid #1a2236;
   cursor: pointer;
   border-radius: 10px;
   margin-bottom: 24px;
@@ -77,11 +78,12 @@
 
 button:hover {
   background-color: transparent;
-  border: 1px solid #1A2236;
-  color: #1A2236;
+  border: 1px solid #1a2236;
+  color: #1a2236;
+
 }
 
- .social-icons {
+.social-icons {
   display: flex;
   justify-content: center;
   gap: 16px;
@@ -91,5 +93,5 @@ button:hover {
 
 .social-icons img:hover {
   transform: scale(1.5);
+  
 }
-
