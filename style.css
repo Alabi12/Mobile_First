@@ -24,7 +24,6 @@ body{
     'button button button button button button'
     'icons icons icons icons icons icons';
     gap: 15px;
-    background-image: url('images/contact\ form\ background\ shapes@2x.png');
 }
 .snapshot-image {
     grid-area: header;
@@ -149,6 +148,8 @@ button {
     grid-row: 1;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .javascript-icon {
@@ -192,7 +193,6 @@ button {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: grey;
   }
 
   .skills {
@@ -203,7 +203,6 @@ button {
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    background-color: grey;
   }
 
   h1{
