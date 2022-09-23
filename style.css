@@ -32,7 +32,6 @@ body {
   max-height: 50vh;
   grid-column: 2 / 3;
   grid-row: 1;
-
 }
 
 .tonicmain {
@@ -203,4 +202,8 @@ button:hover {
 
 h1 {
   margin: 20px 20px;
+}
+
+.drowdown .framework .skills i {
+  font-size: 36px;
 }
