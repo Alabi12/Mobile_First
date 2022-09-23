@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+
 * {
   font-family: 'Poppins', sans-serif;
   box-sizing: inherit;
@@ -206,4 +207,89 @@ h1 {
 
 .drowdown .framework .skills i {
   font-size: 36px;
+}
+
+/* ---home page CSS---- */
+.container {
+  background-image: url("images/header-shapes\ mobile.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  padding: 20px;
+  align-items: center;
+  font-size: 24px;
+}
+
+.header a {
+  text-decoration: none;
+  color: #6070ff;
+}
+
+.headline i {
+  color: #6070ff;
+}
+
+.text-container {
+  margin: 0 24px;
+  gap: 12px;
+}
+
+.text1 {
+  width: 327px;
+  height: 150px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+}
+
+.text2 {
+  width: 327px;
+  height: 146px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.text3 button {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 12px 30px;
+  line-height: 24px;
+  color: #ffff;
+  background: #1a2236;
+  border: 1px solid #1a2236;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+
+button:hover {
+  background-color: transparent;
+  border: 1px solid #1a2236;
+  color: #1a2236;
+}
+
+.social-icons ul {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-left: -160px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.social-icons img:hover {
+  transform: scale(1.5);
 }
