@@ -37,6 +37,7 @@ body{
     grid-area: tonic;
     grid-column: 2 / 3;
     grid-row: 2;
+    font-style: normal;
     font-weight: 700;
     font-size: 32px;
     line-height: 44px;
@@ -47,9 +48,10 @@ body{
     grid-area: listitems;
     list-style-type: none;
     grid-column: 2 / 3;
-    padding: 4px 12px;
-    height: 24px;
-   
+    border-radius: 8px;
+    color: #6070FF;
+    font-size: 12px;
+    padding: 5px;
 }
 
  .selection{
@@ -67,12 +69,10 @@ body{
     grid-area: languages;
     grid-column: 2 / 4;
     grid-row: 5;
-    background-color: #EBEBFF;
     border-radius: 8px;
     color: #6070FF;
     font-size: 12px;
-    background: #EBEBFF;
-    border-radius: 8px;
+    padding: 5px;
 }
 
 .button{
@@ -92,13 +92,12 @@ ul{
     list-style-type: none;
     gap: 12px;
     font-weight: bold;
-    color: #6070FF;
-    background: #EBEBFF;
+
 }
-/* ul span{
+ul span{
     font-weight: bold;
-    background: #EBEBFF;
-} */
+    color: #344563;
+}
 button {
     font-style: normal;
     font-weight: 500;
@@ -120,11 +119,9 @@ button {
   }
 
   .languages li{
-    border: 2px solid;
     border-radius: 10px;
     padding: 2px 10px;
-    background-color: grey;
-    color: lightblue;
+    background: #EBEBFF;
   }
 
   .languages a {
