@@ -5,20 +5,18 @@
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-
 }
 
 body {
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 16px;
-gap: 12px;
-width: 327px;
-height: 552px;
-box-sizing: border-box;
-background-color: #344563;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  gap: 12px;
+  width: 327px;
+  height: 552px;
+  box-sizing: border-box;
+  background-color: #344563;
 }
 
 .grid-container {
@@ -31,16 +29,14 @@ background-color: #344563;
   background-color: #ffff;
   border-radius: 30px;
   margin-left: 10px;
-  padding: 114px, 24px, 114px, 24px
-
-  
+  padding: 114px, 24px, 114px, 24px;
 }
 
 .snapshot-image {
   max-height: 50vh;
   grid-column: 2;
   grid-row: 1;
-  padding: 1px, 24px, 114px, 24px
+  padding: 1px, 24px, 114px, 24px;
 }
 
 .tonicmain {
@@ -215,23 +211,21 @@ ul span {
   display: flex;
   justify-content: space-between;
 }
+
 h2 {
   font-weight: 500;
   font-size: 20px;
-  font-weight: bold;
 }
 
 h3 {
   font-size: 20px;
   line-height: 24px;
-  
-}
-.lang > li > h3{
-  font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 15px;
-line-height: 20px;
-
 }
 
+.lang > li > h3 {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+}
