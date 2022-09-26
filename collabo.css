@@ -1,0 +1,30 @@
+ul {
+  list-style: none;
+}
+
+.float {
+  display: flex;
+  padding: 20px;
+}
+
+.skill {
+  background-color: rebeccapurple;
+  margin: 30px;
+  padding: 20px;
+  border-radius: 20px;
+  color: #fff;
+  border: 1px solid royalblue;
+}
+
+#s1 {a
+  float: left;
+}
+
+#s2 {
+  float: none;
+}
+
+#s3 {
+  float: right;
+}
+
