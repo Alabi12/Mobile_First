@@ -1,43 +1,177 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@400;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link
+href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700;800&family=Roboto:wght@300;400;500&display=swap"
+rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-     <section class="whole-container">   
-        <header class="header">
-            <a href="logoLink">My Logo</a>
-            <nav class="headline">
-                <i class="fa fa-bars"></i>
-            </nav>
-        </header>
-        <div class="container">
-        <div class="text-container">
-            <h1 class="text1">
-                I'm Robert, <br>grateful to see you!
-            </h1>
-            <div class="text2">
-                    <p>i'm a trainee software Engineer with Microverse Inc. I have been building simple App with Html, Css and Javascript.The links below are my social handle that leads to some project!</p>
-            </div>
-            <div class="text3"><button type="button">LET'S CONNECT</button></div> 
-        </div>
+<div class="portfolio-class">
+<nav class="flex-box clear-white-background">
+  <a id="title" href="#">Logo</a>
+  <div class="flex-box lang-stacking-box">
+    <span id="lang-stacking"></span>
+  </div>
+</nav>
+<main class="mheadline clear-white-background">
+  <article>
+    <h1>I'm Robert<br> Glad to see <br> you!</h1>
+    <p>I'm a software developer! I can help you build a product , feature or website Look through some of my work
+      and experience! If you like what you see and have a project you need coded, don't hestiate to contact me.</p>
+    <div class="socials">
+      <h6>LET'S CONNECT</h6>
+      <ul class="social-icon-containers flex-box">
+        <li>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </li>
+      </ul>
     </div>
-    <div class="social-icons">
-        <ul>
-            <li><a href="https://twitter.com"><img src="images/twitter.png" alt="twitter"></a></li>
-            <li><a href="https://Linkedin.com"><img src="images/Linkedin icon.png" alt="Linkedin"></a></li>
-            <li><a href="https://medium.com"><img src="images/medium.png" alt="medium"></a></li>
-            <li><a href="https://github.com"><img src="images/github.png" alt="github"></a></li>
-            <li><a href="https://angellist.com"><img src="images/angellist.png" alt="angellist"></a></li>
-        </ul>   
-    </div>
+  </article>
+</main>
+<section class="mobile-work">
+  <article class="card flex-box clear-white-background">
+    <img src="./images/project_1.png" alt="tonic project preview">
+    <h3>Tonic</h3>
+    <ul class="flex-box work-info">
+      <li>CANOPY</li>
+      <li>BACKEND DEV</li>
+      <li>2015</li>
+    </ul>
+    <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+    <ul class="flex-box mobile-work-info">
+      <li>html</li>
+      <li>css</li>
+      <li>javascript</li>
+    </ul>
+    <button class="preview_button outline">See Project</button>
+  </article>
+  <article class="card flex-box clear-white-background">
+    <img src="./images/project_2.png" alt="Multi-Post project preview">
+    <h3>Multi-Post Stories</h3>
+    <ul class="flex-box work-info">
+      <li>CANOPY</li>
+      <li>BACKEND DEV</li>
+      <li>2015</li>
+    </ul>
+    <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+    <ul class="flex-box mobile-work-info">
+      <li>html</li>
+      <li>css</li>
+      <li>javascript</li>
+    </ul>
+    <button class="preview_button outline">See Project</button>
+  </article>
+  <article class="card flex-box clear-white-background">
+    <img src="./images/project_3.png" alt="tonic project preview">
+    <h3>Tonic</h3>
+    <ul class="flex-box work-info">
+      <li>CANOPY</li>
+      <li>BACKEND DEV</li>
+      <li>2015</li>
+    </ul>
+    <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+    <ul class="flex-box mobile-work-info">
+      <li>html</li>
+      <li>css</li>
+      <li>javascript</li>
+    </ul>
+    <button class="preview_button outline">See Project</button>
+  </article>
+  <article class="card flex-box clear-white-background">
+    <img src="./images/project_4.png" alt="Multi-Post project preview">
+    <h3>Multi-Post Stories</h3>
+    <ul class="flex-box work-info">
+      <li>CANOPY</li>
+      <li>BACKEND DEV</li>
+      <li>2015</li>
+    </ul>
+    <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+    <ul class="flex-box mobile-work-info">
+      <li>html</li>
+      <li>css</li>
+      <li>javascript</li>
+    </ul>
+    <button class="preview_button outline">See Project</button>
+  </article>
 </section>
+<section class="about clear-white-background">
+  <article>
+    <h1>About <br> Myself</h1>
+    <p>Hello I’m a software developer! I can help you build a product , feature or website Look through some of my
+      work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
+    </p>
+    <div class="socials">
+      <h6>LET'S CONNECT</h6>
+      <ul class="social-icon-containers flex-box">
+        <li>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </li>
+      </ul>
+    </div>
+    <button class="outline">Get My Resume</button>
+    <ul class="about-myself-stacking">
+      <li class="about-myself-stacking-items" style="border-bottom:0px;">
+        <span>Languages</span>
+        <i class="fa fa-angle-down"></i>
+      </li>
+      <ul class="lang">
+            <li class="js">
+                <img src="images/js.png" alt="">
+                <h3>JavaScript</h3>
+            </li>
+            <li class="html">
+                <img src="images/html.png" alt="">
+                <h3>HTML</h3>
+            </li>
+            <li class="css">
+                <img src="images/css.png" alt="">
+                <h3>CSS</h3>
+            </li>
+    </ul>
+      <li class="about-myself-stacking-items">
+        <span>Frameworks</span>
+        <i class="fa-solid fa-chevron-right"></i>
+      </li>
+      <li class="about-myself-stacking-items">
+        <span>Skills</span>
+        <i class="fa-solid fa-chevron-right"></i>
+      </li>
+    </ul>
+  </article>
+</section>
+</div>
 </body>
+
 </html>
