@@ -326,7 +326,7 @@ nav {
 
 .section {
   background-image: url(images/contactimage.png);
-  background-color: #6070FF;
+  background-color: #6070ff;
   height: 779px;
   width: 375px;
   border: 1px solid #ccc;
@@ -340,7 +340,7 @@ nav {
   display: flex;
   align-content: flex-end;
   background-repeat: no-repeat;
-  background-size: cover; 
+  background-size: cover;
 }
 
 .form-heading {
@@ -363,15 +363,16 @@ nav {
   color: #ebebff;
 }
 
-input , textarea {
+input,
+textarea {
   display: block;
   justify-content: center;
-  align-items: center ;
+  align-items: center;
   width: 327px;
   margin: auto;
   margin-bottom: 15px;
-  background: #FFFFFF;
-  border: 1px solid #CFD8DC;
+  background: #fff;
+  border: 1px solid #cfd8dc;
   border-radius: 8px;
 }
 
@@ -384,29 +385,23 @@ textarea {
 }
 
 form > ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .form-btn {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #6070FF;
+  color: #6070ff;
   display: flex;
   margin: 20px;
   align-items: center;
   padding: 12px 16px;
   background: #fff;
   border-radius: 8px;
-}
-
-input, textarea {
-  margin: 10px;
-  padding: 20px;
-  color:#ccc
 }
