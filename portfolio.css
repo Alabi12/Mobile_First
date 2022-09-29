@@ -412,3 +412,80 @@ form > ul {
   background-color: #172b4d;
   color: #fff;
 }
+
+/* ==============================================================
+==================== DESKTOP VERSION ============================ */
+
+@media only screen and (min-width: 800px) {
+  .mheadline {
+    width: 100%;
+    height: 90vh;
+    background-image: url(images/big-header-svg.svg);
+    background-size: contain;
+    background-position: center ;
+    justify-content: center;
+    align-items: center;
+  }
+  .portfolio-class{
+    width: 100%;
+  }
+
+  .About-section {
+    width: 50%;
+  }
+
+  /* .About-section h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+  } */
+
+  /* .About-section p {
+    font-size: 20px;
+    line-height: 28px;
+  } */
+/* 
+  .flex-box {
+    display: flex;
+
+  } */
+ 
+  .desktop-menu-list{
+    display: inline;
+  }
+
+  .desktop-menu-list > li{
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+    display: inline;
+  } 
+
+   nav {
+    padding: 15px 143px 100px 143px; 
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+  } 
+
+  /* .card {
+    display:flex;
+    align-items: center;
+  }
+  /* .card h3 {
+    flex-grow:0;
+    flex-shrink:0;
+  } */
+
+  /* .image {
+    min-width: 150px;
+  }
+  
+  .text {
+    font-size: .875em;
+    line-height: 1.55;
+    padding: 8px;
+  } */
+} */
