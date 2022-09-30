@@ -178,7 +178,7 @@ nav {
 }
 
 .mheadline {
-  background-image: url("./images/header-shapes.svg");
+  background-image: url(./images/header-shapes.svg);
   background-repeat: no-repeat;
   display: flex;
   align-items: flex-start;
