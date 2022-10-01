@@ -279,7 +279,7 @@ nav {
   font-size: 20px;
   line-height: 24px;
   padding: 1.5rem 0.5rem;
-  width: 60vw;
+  width: 50vw;
   cursor: pointer;
   border-bottom: 1px solid #dfe1e6;
 }
@@ -298,13 +298,13 @@ nav {
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
-  width: 300px;
+  width: 80%;
 }
 
 .js {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 10px;
   background: #f7f7f9;
   border-radius: 8px;
   padding: 10px 7px;
@@ -315,7 +315,7 @@ nav {
   margin-bottom: 10px;
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 10px;
   background: #f7f7f9;
   border-radius: 8px;
   padding: 10px 7px;
@@ -325,7 +325,7 @@ nav {
   margin-bottom: 10px;
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 10px;
   background: #f7f7f9;
   border-radius: 8px;
   padding: 10px 7px;
@@ -561,7 +561,7 @@ form > ul {
     place-content: center;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr;
-    padding: 142px 142px;
+    padding: 100px 100px;
   }
 
   .desktop-about {
@@ -573,11 +573,11 @@ form > ul {
   }
 
   .desktop-lang {
-    width: 55%;
+    width: 50%;
   }
 
   .lang {
-    width: 90%;
+    width: 40vw;
     flex-direction: row;
     column-gap: 20px;
   }
