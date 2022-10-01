@@ -279,6 +279,7 @@ nav {
   font-size: 20px;
   line-height: 24px;
   padding: 1.5rem 0.5rem;
+  width: 60vw;
   cursor: pointer;
   border-bottom: 1px solid #dfe1e6;
 }
@@ -297,6 +298,7 @@ nav {
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
+  width: 300px;
 }
 
 .js {
