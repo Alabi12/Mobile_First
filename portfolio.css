@@ -101,7 +101,8 @@ button {
 .icons_social__container {
   justify-content: flex-start;
 }
-/* 
+
+/*
 .lang > li {
   flex-direction: column;
   width: 100%;
@@ -270,12 +271,12 @@ nav {
   justify-content: flex-start;
   padding: 1.5rem 0;
 }
+
 @media only screen and (max-width: 799px) {
   .about__stacks {
     width: 300px;
-  } 
+  }
 }
-
 
 .about_stacks__item {
   display: flex;
@@ -437,7 +438,7 @@ form > ul {
 }
 
 .form-btn:hover {
-  background-color:#396df2;
+  background-color: #396df2;
   color: #fff;
 }
 
@@ -574,7 +575,7 @@ form > ul {
     width: 100%;
     display: grid;
     place-content: center;
-    grid-template-columns: 1fr 2.5fr ;
+    grid-template-columns: 1fr 2.5fr;
     grid-template-rows: 1fr;
     padding: 142px 142px;
   }
@@ -623,7 +624,7 @@ form > ul {
   }
 
   .form-btn:hover {
-    background-color:#396df2;
+    background-color: #396df2;
     color: #fff;
   }
 
