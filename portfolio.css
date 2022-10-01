@@ -102,12 +102,12 @@ button {
   justify-content: flex-start;
 }
 
-.lang > li {
+/* .lang > li {
   flex-direction: column;
   width: 100%;
   align-items: flex-start;
   padding: 12px 20px;
-}
+} */
 
 .socials > ul > li {
   list-style: none;
@@ -337,15 +337,16 @@ nav {
   line-height: 20px;
 }
 
-.container {
+ .container {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+  background: #FFFFFF;
+} 
 
 .section {
   background-image: url(images/form-img.png);
-  background-position: center right;
+  background-position: center; 
   background-color: #6070ff;
   background-repeat: no-repeat;
   height: 779px;
