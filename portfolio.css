@@ -337,16 +337,16 @@ nav {
   line-height: 20px;
 }
 
- .container {
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #FFFFFF;
-} 
+  background: #fff;
+}
 
 .section {
   background-image: url(images/form-img.png);
-  background-position: center; 
+  background-position: center;
   background-color: #6070ff;
   background-repeat: no-repeat;
   height: 779px;
