@@ -440,6 +440,8 @@ form > ul {
 .form-btn:hover {
   background-color: #396df2;
   color: #fff;
+  transform: rotate(45deg); 
+  background-color: red;
 }
 
 ::placeholder {
@@ -626,6 +628,8 @@ form > ul {
   .form-btn:hover {
     background-color: #396df2;
     color: #fff;
+    transform: rotate(45deg); 
+    background-color: red;
   }
 
   input,
