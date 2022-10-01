@@ -101,8 +101,8 @@ button {
 .icons_social__container {
   justify-content: flex-start;
 }
-
-/* .lang > li {
+/* 
+.lang > li {
   flex-direction: column;
   width: 100%;
   align-items: flex-start;
@@ -270,6 +270,12 @@ nav {
   justify-content: flex-start;
   padding: 1.5rem 0;
 }
+@media only screen and (max-width: 799px) {
+  .about__stacks {
+    width: 300px;
+  } 
+}
+
 
 .about_stacks__item {
   display: flex;
@@ -279,7 +285,6 @@ nav {
   font-size: 20px;
   line-height: 24px;
   padding: 1.5rem 0.5rem;
-  width: 50vw;
   cursor: pointer;
   border-bottom: 1px solid #dfe1e6;
 }
@@ -298,13 +303,12 @@ nav {
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
-  width: 80%;
 }
 
 .js {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 30px;
   background: #f7f7f9;
   border-radius: 8px;
   padding: 10px 7px;
@@ -315,7 +319,7 @@ nav {
   margin-bottom: 10px;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 30px;
   background: #f7f7f9;
   border-radius: 8px;
   padding: 10px 7px;
@@ -325,7 +329,7 @@ nav {
   margin-bottom: 10px;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 30px;
   background: #f7f7f9;
   border-radius: 8px;
   padding: 10px 7px;
@@ -343,12 +347,11 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #fff;
 }
 
 .section {
   background-image: url(images/form-img.png);
-  background-position: center;
+  background-position: center right;
   background-color: #6070ff;
   background-repeat: no-repeat;
   height: 779px;
@@ -433,6 +436,11 @@ form > ul {
   border-radius: 8px;
 }
 
+.form-btn:hover {
+  background-color:#396df2;
+  color: #fff;
+}
+
 ::placeholder {
   color: #b3bac5;
 }
@@ -466,9 +474,9 @@ form > ul {
     width: 50%;
   }
 
-  .desktop-about-section > h3 {
-    font-weight: 400;
-    font-size: 24px;
+  .desktop-about-section > h1 {
+    font-weight: 700;
+    font-size: 48px;
     line-height: 60px;
   }
 
@@ -532,6 +540,13 @@ form > ul {
     line-height: 52px;
   }
 
+  .lang > li {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    padding: 12px 20px;
+  }
+
   .card > .desktop-work-detail > .project_details > li {
     font-weight: 500;
     font-size: 18px;
@@ -559,10 +574,14 @@ form > ul {
     width: 100%;
     display: grid;
     place-content: center;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 2.5fr ;
     grid-template-rows: 1fr;
-    padding: 100px 100px;
+    padding: 142px 142px;
   }
+
+  /* .desktop-about {
+    width: 26%;
+  } */
 
   .desktop-about {
     width: 100%;
@@ -572,12 +591,8 @@ form > ul {
     font-size: 24px;
   }
 
-  .desktop-lang {
-    width: 50%;
-  }
-
   .lang {
-    width: 40vw;
+    width: 50%;
     flex-direction: row;
     column-gap: 20px;
   }
@@ -605,6 +620,11 @@ form > ul {
   .form-btn {
     margin: auto;
     margin-top: 25px;
+  }
+
+  .form-btn:hover {
+    background-color:#396df2;
+    color: #fff;
   }
 
   input,
