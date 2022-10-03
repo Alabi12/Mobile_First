@@ -626,6 +626,7 @@ form > ul {
   .form-btn:hover {
     background-color: #396df2;
     color: #fff;
+    transform: rotate(45deg);
   }
 
   input,
