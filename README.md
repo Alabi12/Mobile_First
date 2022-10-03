@@ -11,20 +11,20 @@
 
 ## Getting Started
 <ol>
-   <li>**Create a new GitHub repository.</li>
-   <li>**Clone the repository to the local env through commandline/terminal or code editors like Visual Studio Code.</li>
-   <li>**Create a new feature branch.</li>
-   <li>**Create .gitignore file.</li>
-   <li>**Set up GitHub Actions and linters in the local env.</li>
-   <li>**Add the main files and folders to the main branch.</li>
-   <li>** Add the following files in separate commits-</li>
+   <li>Create a new GitHub repository.</li>
+   <li>Clone the repository to the local env through commandline/terminal or code editors like Visual Studio Code.</li>
+   <li>Create a new feature branch.</li>
+   <li>Create .gitignore file.</li>
+   <li>Set up GitHub Actions and linters in the local env.</li>
+   <li>Add the main files and folders to the main branch.</li>
+   <li>Add the following files in separate commits-</li>
      <ol>
        <li>A .html file for the skeletal makeup of the webpage.</li>
        <li>A .css file for styling the webpage.</li>
      </ol>
-   <li>**Open a pull request.</li>
-   <li>**Submit the project for the code review.</li>
-   <li>**After receiving the review, work on the required changes(if any) and submit again. Keep learning!!!</li>
+   <li>Open a pull request.</li>
+   <li>Submit the project for the code review.</li>
+   <li>After receiving the review, work on the required changes(if any) and submit again. Keep learning!!!</li>
 </ol>
 
 
@@ -44,14 +44,14 @@ Clone the repository and use a browser to open the index.html to view the portfo
 - GitHub: [@Alabi12](https://github.com/Alabi12)
 - Twitter: [@wolo_robert](https://twitter.com/wolo_robert)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/robert-o-alabi-49ba4b184)
+- Website: [GithubPage](https://alabi12.github.io/Mobile_First/)
 
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
-
+Feel free to check this link https://alabi12.github.io/Mobile_First/
 ## Show your support
 
 Give a ⭐️ if you like this project!
