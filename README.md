@@ -50,7 +50,7 @@ Clone the repository and use a browser to open the index.html to view the portfo
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check this site  https://alabi12.github.io/Mobile_First/.
 
 ## Show your support
 
