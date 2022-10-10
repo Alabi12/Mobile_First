@@ -19,348 +19,355 @@
   </head>
 
   <body>
-    <div class="main-container">
-      <div class="portfolio-class">
-        <nav class="flex white-back">
-          <a id="title" href="#">My Logo</a>
-
-          <div class="flex icon-stack-container">
-            <span id="icon-stack"></span>
-          </div>
-          <ul class="menu-list">
-            <li><a href="#">Portoflio</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+    <header>
+      <nav class="navbar">
+        <a id="logo" href="#">My Logo</a>
+        <ul id="menuList">
+          <li><a href="#mheadline" class="navLinks">Portoflio</a></li>
+          <li><a href="#projects" class="navLinks">About</a></li>
+          <li><a href="#container" class="navLinks">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+    <section class="mheadline">
+      <div class="text-container">
+        <h1>
+          I'm Robert<br />
+          Glad to see you!
+        </h1>
+        <p>
+          I'm a software developer! I can help you build a product , feature or
+          website Look through some of my work and experience! If you like what
+          you see and have a project you need coded, don't hestiate to contact
+          me.
+        </p>
+        </div>
+        <div class="socials">
+          <h6>LET'S CONNECT</h6>
+          <ul class="icons_social__container flex">
+            <li>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-github"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
           </ul>
-        </nav>
-        <main class="mheadline white-back">
-          <section class="desktop-about-section">
-            <h1>I'm Robert<br> Glad to see you!</h1>
-            <p>I'm a software developer! I can help you build a product , feature or website Look through some of my work
-              and experience! If you like what you see and have a project you need coded, don't hestiate to contact me.</p>
-            <div class="socials">
-              <h6>LET'S CONNECT</h6>
-              <ul class="icons_social__container flex">
-                <li>
-                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa-brands fa-github"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                </li>
-              </ul>
-            </div>
-          </section>
-        </main>
-        <section class="projects">
-          <div class="desktop-project-container">
-            <article class="card flex white-back">
-              <div class="desktop-wrok-img">
-                <img
-                  src="images/desktop-Snapshoot1.svg"
-                  alt="tonic project preview"
-                />
-              </div>
-              <img
-                class="mobile-work-img"
-                src="./images/project_1.png"
-                alt="tonic project preview"
-              />
-              <div class="desktop-work-detail">
-                <h3>Tonic</h3>
-                <ul class="flex project_details">
-                  <li>CANOPY</li>
-                  <li>BACKEND DEV</li>
-                  <li>2015</li>
-                </ul>
-                <p>
-                  A daily selection of privately personalized reads; no accounts
-                  or sign-ups required.
-                </p>
-                <ul class="flex project_coding_langs">
-                  <li>html</li>
-                  <li>css</li>
-                  <li>javascript</li>
-                </ul>
-                <button class="preview_button outlinings">See Project</button>
-              </div>
-            </article>
-            <article class="hide card flex white-back">
-              <div class="desktop-wrok-img">
-                <img
-                  src="images/desktop-Snapshoot1.svg"
-                  alt="tonic project preview"
-                />
-              </div>
-              <img
-                class="mobile-work-img"
-                src="./images/project_2.png"
-                alt="Multi-Post project preview"
-              />
-              <div class="desktop-work-detail">
-                <h3>Multi-Post Stories</h3>
-                <ul class="flex project_details">
-                  <li>CANOPY</li>
-                  <li>BACKEND DEV</li>
-                  <li>2015</li>
-                </ul>
-                <p>
-                  A daily selection of privately personalized reads; no accounts
-                  or sign-ups required.
-                </p>
-                <ul class="flex project_coding_langs">
-                  <li>html</li>
-                  <li>css</li>
-                  <li>javascript</li>
-                </ul>
-                <button class="preview_button outlinings">See Project</button>
-              </div>
-            </article>
-
-            <article class="desktop-post reverse-work card flex white-back">
-              <div class="desktop-wrok-img">
-                <img
-                  src="images/desktop-Snapshoot2.svg"
-                  alt="tonic project preview"
-                />
-              </div>
-              <img
-                class="mobile-work-img"
-                src="./images/project_2.png"
-                alt="Multi-Post project preview"
-              />
-              <div class="desktop-work-detail">
-                <h3>Multi-Post Stories</h3>
-                <ul class="flex project_details">
-                  <li>FACEBOOK</li>
-                  <li>FULL Stack DEV</li>
-                  <li>2015</li>
-                </ul>
-                <p>
-                  Experimental content creation feature that allows users to add
-                  to an existing story over the course of a day without spamming
-                  their friends.
-                </p>
-                <ul class="flex project_coding_langs">
-                  <li>html</li>
-                  <li>Ruby on rails</li>
-                  <li>css</li>
-                  <li>javascript</li>
-                </ul>
-                <button class="preview_button outlinings">See Project</button>
-              </div>
-            </article>
-
-            <article class="desktop-post card flex white-back">
-              <div class="desktop-wrok-img">
-                <img
-                  src="images/desktop-Snapshoot3.svg"
-                  alt="tonic project preview"
-                />
-              </div>
-              <img
-                class="mobile-work-img"
-                src="./images/project_2.png"
-                alt="Multi-Post project preview"
-              />
-              <div class="desktop-work-detail">
-                <h3>FACEBOOK 360</h3>
-                <ul class="flex project_details">
-                  <li>FACEBOOK</li>
-                  <li>FULL Stack DEV</li>
-                  <li>2015</li>
-                </ul>
-                <p>
-                  Exploring the future of media in Facebook's first Virtual
-                  Reality app; a place to discover and enjoy 360 photos and
-                  videos on Gear VR.
-                </p>
-                <ul class="flex project_coding_langs">
-                  <li>html</li>
-                  <li>Ruby on rails</li>
-                  <li>css</li>
-                  <li>javascript</li>
-                </ul>
-                <button class="preview_button outlinings">See Project</button>
-              </div>
-            </article>
-
-            <article class="desktop-post reverse-work card flex white-back">
-              <div class="desktop-wrok-img">
-                <img
-                  src="images/desktop-Snapshoot4.svg"
-                  alt="tonic project preview"
-                />
-              </div>
-              <img
-                class="mobile-work-img"
-                src="./images/project_2.png"
-                alt="Multi-Post project preview"
-              />
-              <div class="desktop-work-detail">
-                <h3>Uber Navigation</h3>
-                <ul class="flex project_details">
-                  <li>Uber</li>
-                  <li>Lead Developer</li>
-                  <li>2018</li>
-                </ul>
-                <p>
-                  A smart assistant to make driving more safe, efficient, and
-                  fun by unlocking your most expensive computer: your car.
-                </p>
-                <ul class="flex project_coding_langs">
-                  <li>html</li>
-                  <li>Ruby on rails</li>
-                  <li>css</li>
-                  <li>javascript</li>
-                </ul>
-                <button class="preview_button outlinings">See Project</button>
-              </div>
-            </article>
-
-            <article class="hide card flex white-back">
-              <div class="desktop-wrok-img">
-                <img
-                  src="images/desktop-Snapshoot3.svg"
-                  alt="tonic project preview"
-                />
-              </div>
-              <img
-                class="mobile-work-img"
-                src="./images/project_3.png"
-                alt="tonic project preview"
-              />
-              <div class="desktop-work-detail">
-                <h3>Tonic</h3>
-                <ul class="flex project_details">
-                  <li>CANOPY</li>
-                  <li>BACKEND DEV</li>
-                  <li>2015</li>
-                </ul>
-                <p>
-                  A daily selection of privately personalized reads; no accounts
-                  or sign-ups required.
-                </p>
-                <ul class="flex project_coding_langs">
-                  <li>html</li>
-                  <li>css</li>
-                  <li>javascript</li>
-                </ul>
-                <button class="preview_button outlinings">See Project</button>
-              </div>
-            </article>
-            <article class="hide reverse-work-2 card flex white-back">
-              <div class="desktop-wrok-img">
-                <img
-                  src="images/desktop-Snapshoot4.svg"
-                  alt="tonic project preview"
-                />
-              </div>
-              <img
-                class="mobile-work-img"
-                src="./images/project_4.png"
-                alt="tonic project preview"
-              />
-              <div class="desktop-work-detail">
-                <h3>Multi-Post Stories</h3>
-                <ul class="flex project_details">
-                  <li>CANOPY</li>
-                  <li>BACKEND DEV</li>
-                  <li>2015</li>
-                </ul>
-                <p>
-                  A daily selection of privately personalized reads; no accounts
-                  or sign-ups required.
-                </p>
-                <ul class="flex project_coding_langs">
-                  <li>html</li>
-                  <li>css</li>
-                  <li>javascript</li>
-                </ul>
-                <button class="preview_button outlinings">See Project</button>
-              </div>
-            </article>
+        </div>
+      </section>
+    <section class="projects">
+      <div class="desktop-project-container">
+        <article class="card flex white-back">
+          <div class="desktop-wrok-img">
+            <img
+              src="images/desktop-Snapshoot1.svg"
+              alt="tonic project preview"
+            />
           </div>
-        </section>
-
-        <section class="about white-back">
-          <div class="desktop-about">
-            <h3>
-              About <br />
-              Myself
-            </h3>
-            <p>
-              Hello I’m a software developer! I can help you build a product ,
-              feature or website Look through some of my work and experience! If
-              you like what you see and have a project you need coded, don’t
-              hestiate to contact me.
-            </p>
-            <div class="socials">
-              <h6>LET'S CONNECT</h6>
-              <ul class="icons_social__container flex">
-                <li>
-                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa-brands fa-github"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                </li>
-              </ul>
-            </div>
-            <button class="outlinings">Get My Resume</button>
-          </div>
-          <div class="desktop-lang">
-            <ul class="about__stacks">
-              <li class="about_stacks__item" style="border-bottom: 0px">
-                <span>Languages</span>
-                <i class="fa fa-angle-down"></i>
-              </li>
-              <ul class="lang">
-                <li class="js">
-                  <img src="images/js.png" alt="" />
-                  <h3>JavaScript</h3>
-                </li>
-                <li class="html">
-                  <img src="images/html.png" alt="" />
-                  <h3>HTML</h3>
-                </li>
-                <li class="css">
-                  <img src="images/css.png" alt="" />
-                  <h3>CSS</h3>
-                </li>
-              </ul>
-              <li class="about_stacks__item">
-                <span>Frameworks</span>
-                <i class="fa-solid fa-chevron-right"></i>
-              </li>
-              <li class="about_stacks__item">
-                <span>Skills</span>
-                <i class="fa-solid fa-chevron-right"></i>
-              </li>
+          <img
+            class="mobile-work-img"
+            src="./images/project_1.png"
+            alt="tonic project preview"
+          />
+          <div class="desktop-work-detail">
+            <h3>Tonic</h3>
+            <ul class="flex project_details">
+              <li>CANOPY</li>
+              <li>BACKEND DEV</li>
+              <li>2015</li>
             </ul>
+            <p>
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required.
+            </p>
+            <ul class="flex project_coding_langs">
+              <li>html</li>
+              <li>css</li>
+              <li>javascript</li>
+            </ul>
+            <button class="preview_button outlinings">See Project</button>
           </div>
-        </section>
+        </article>
+        <article class="hide card flex white-back">
+          <div class="desktop-wrok-img">
+            <img
+              src="images/desktop-Snapshoot1.svg"
+              alt="tonic project preview"
+            />
+          </div>
+          <img
+            class="mobile-work-img"
+            src="./images/project_2.png"
+            alt="Multi-Post project preview"
+          />
+          <div class="desktop-work-detail">
+            <h3>Multi-Post Stories</h3>
+            <ul class="flex project_details">
+              <li>CANOPY</li>
+              <li>BACKEND DEV</li>
+              <li>2015</li>
+            </ul>
+            <p>
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required.
+            </p>
+            <ul class="flex project_coding_langs">
+              <li>html</li>
+              <li>css</li>
+              <li>javascript</li>
+            </ul>
+            <button class="preview_button outlinings">See Project</button>
+          </div>
+        </article>
+
+        <article class="desktop-post reverse-work card flex white-back">
+          <div class="desktop-wrok-img">
+            <img
+              src="images/desktop-Snapshoot2.svg"
+              alt="tonic project preview"
+            />
+          </div>
+          <img
+            class="mobile-work-img"
+            src="./images/project_2.png"
+            alt="Multi-Post project preview"
+          />
+          <div class="desktop-work-detail">
+            <h3>Multi-Post Stories</h3>
+            <ul class="flex project_details">
+              <li>FACEBOOK</li>
+              <li>FULL Stack DEV</li>
+              <li>2015</li>
+            </ul>
+            <p>
+              Experimental content creation feature that allows users to add to
+              an existing story over the course of a day without spamming their
+              friends.
+            </p>
+            <ul class="flex project_coding_langs">
+              <li>html</li>
+              <li>Ruby on rails</li>
+              <li>css</li>
+              <li>javascript</li>
+            </ul>
+            <button class="preview_button outlinings">See Project</button>
+          </div>
+        </article>
+
+        <article class="desktop-post card flex white-back">
+          <div class="desktop-wrok-img">
+            <img
+              src="images/desktop-Snapshoot3.svg"
+              alt="tonic project preview"
+            />
+          </div>
+          <img
+            class="mobile-work-img"
+            src="./images/project_2.png"
+            alt="Multi-Post project preview"
+          />
+          <div class="desktop-work-detail">
+            <h3>FACEBOOK 360</h3>
+            <ul class="flex project_details">
+              <li>FACEBOOK</li>
+              <li>FULL Stack DEV</li>
+              <li>2015</li>
+            </ul>
+            <p>
+              Exploring the future of media in Facebook's first Virtual Reality
+              app; a place to discover and enjoy 360 photos and videos on Gear
+              VR.
+            </p>
+            <ul class="flex project_coding_langs">
+              <li>html</li>
+              <li>Ruby on rails</li>
+              <li>css</li>
+              <li>javascript</li>
+            </ul>
+            <button class="preview_button outlinings">See Project</button>
+          </div>
+        </article>
+
+        <article class="desktop-post reverse-work card flex white-back">
+          <div class="desktop-wrok-img">
+            <img
+              src="images/desktop-Snapshoot4.svg"
+              alt="tonic project preview"
+            />
+          </div>
+          <img
+            class="mobile-work-img"
+            src="./images/project_2.png"
+            alt="Multi-Post project preview"
+          />
+          <div class="desktop-work-detail">
+            <h3>Uber Navigation</h3>
+            <ul class="flex project_details">
+              <li>Uber</li>
+              <li>Lead Developer</li>
+              <li>2018</li>
+            </ul>
+            <p>
+              A smart assistant to make driving more safe, efficient, and fun by
+              unlocking your most expensive computer: your car.
+            </p>
+            <ul class="flex project_coding_langs">
+              <li>html</li>
+              <li>Ruby on rails</li>
+              <li>css</li>
+              <li>javascript</li>
+            </ul>
+            <button class="preview_button outlinings">See Project</button>
+          </div>
+        </article>
+
+        <article class="hide card flex white-back">
+          <div class="desktop-wrok-img">
+            <img
+              src="images/desktop-Snapshoot3.svg"
+              alt="tonic project preview"
+            />
+          </div>
+          <img
+            class="mobile-work-img"
+            src="./images/project_3.png"
+            alt="tonic project preview"
+          />
+          <div class="desktop-work-detail">
+            <h3>Tonic</h3>
+            <ul class="flex project_details">
+              <li>CANOPY</li>
+              <li>BACKEND DEV</li>
+              <li>2015</li>
+            </ul>
+            <p>
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required.
+            </p>
+            <ul class="flex project_coding_langs">
+              <li>html</li>
+              <li>css</li>
+              <li>javascript</li>
+            </ul>
+            <button class="preview_button outlinings">See Project</button>
+          </div>
+        </article>
+        <article class="hide reverse-work-2 card flex white-back">
+          <div class="desktop-wrok-img">
+            <img
+              src="images/desktop-Snapshoot4.svg"
+              alt="tonic project preview"
+            />
+          </div>
+          <img
+            class="mobile-work-img"
+            src="./images/project_4.png"
+            alt="tonic project preview"
+          />
+          <div class="desktop-work-detail">
+            <h3>Multi-Post Stories</h3>
+            <ul class="flex project_details">
+              <li>CANOPY</li>
+              <li>BACKEND DEV</li>
+              <li>2015</li>
+            </ul>
+            <p>
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required.
+            </p>
+            <ul class="flex project_coding_langs">
+              <li>html</li>
+              <li>css</li>
+              <li>javascript</li>
+            </ul>
+            <button class="preview_button outlinings">See Project</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="about white-back">
+      <div class="desktop-about">
+        <h3>
+          About <br />
+          Myself
+        </h3>
+        <p>
+          Hello I’m a software developer! I can help you build a product ,
+          feature or website Look through some of my work and experience! If you
+          like what you see and have a project you need coded, don’t hestiate to
+          contact me.
+        </p>
+        <div class="socials">
+          <h6>LET'S CONNECT</h6>
+          <ul class="icons_social__container flex">
+            <li>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-github"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+        <button class="outlinings">Get My Resume</button>
+      </div>
+      <div class="desktop-lang">
+        <ul class="about__stacks">
+          <li class="about_stacks__item" style="border-bottom: 0px">
+            <span>Languages</span>
+            <i class="fa fa-angle-down"></i>
+          </li>
+          <ul class="lang">
+            <li class="js">
+              <img src="images/js.png" alt="" />
+              <h3>JavaScript</h3>
+            </li>
+            <li class="html">
+              <img src="images/html.png" alt="" />
+              <h3>HTML</h3>
+            </li>
+            <li class="css">
+              <img src="images/css.png" alt="" />
+              <h3>CSS</h3>
+            </li>
+          </ul>
+          <li class="about_stacks__item">
+            <span>Frameworks</span>
+            <i class="fa-solid fa-chevron-right"></i>
+          </li>
+          <li class="about_stacks__item">
+            <span>Skills</span>
+            <i class="fa-solid fa-chevron-right"></i>
+          </li>
+        </ul>
+      </div>
+    </section>
     <section class="container">
       <div class="section">
         <div>
           <h2 class="form-heading">Contact me</h2>
-
           <p class="form-para">
             If you have an application you are interested in developing, a
             feature that you need built or a project that needs coding. I’d love
@@ -371,17 +378,34 @@
         <form action="https://formspree.io/f/mnqrdydw" method="post">
           <label for="name"></label>
           <input
-            name="name" id="name" type="text" placeholder="name" maxlength="30" required />
+            name="name"
+            id="name"
+            type="text"
+            placeholder="name"
+            maxlength="30"
+            required
+          />
 
           <label for="email"></label>
-          <input name="Email" id="email" type="email" placeholder="enter your email" required(30) />
-
+          <input
+            name="Email"
+            id="email"
+            type="email"
+            placeholder="enter your email"
+            required(30)
+          />
           <textarea
-            name="textarea" id="textarea" cols="30" rows="10" maxlength="500" placeholder="Write your message here"
+            name="textarea"
+            id="textarea"
+            cols="30"
+            rows="10"
+            maxlength="500"
+            placeholder="Write your message here"
           ></textarea>
           <button class="form-btn" type="submit">Get It Touch</button>
         </form>
       </div>
     </section>
-    </body>
-  </html>
+  </body>
+  <script src="script.js"></script>
+</html>
