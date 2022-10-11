@@ -491,12 +491,6 @@ form > ul {
   display: none;
 }
 
-/* #menuList {
-  display: flex;
-  min-height: 70px;
-  justify-content: center;
-} */
-
 @media (max-width: 768px) {
   .active {
     height: 100vh;
@@ -681,10 +675,6 @@ form > ul {
     padding: 142px 142px;
   }
 
-  /* .desktop-about {
-    width: 26%;
-  } */
-
   .desktop-about {
     width: 100%;
   }
@@ -750,7 +740,6 @@ form > ul {
   width: 100%;
   z-index: 9;
   position: fixed;
-  /* display: none; */
 }
 
 .mobile-menu-items > li > a {
