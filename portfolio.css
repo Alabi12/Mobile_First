@@ -49,8 +49,12 @@ a {
   cursor: pointer;
 }
 
-.logo:active {
-  display: none;
+.logo {
+  visibility: visible;
+}
+
+.logo-responsive {
+  visibility: hidden;
 }
 
 .bar {
