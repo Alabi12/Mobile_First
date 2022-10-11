@@ -19,10 +19,7 @@
   font-family: var(--font-poppins);
 }
 
-.main-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+body {
   background-color: rgb(229, 226, 226);
 }
 
@@ -36,6 +33,7 @@ a {
 
 .navbar {
   display: flex;
+  background-color: #fff;
 }
 
 .navLinks {
@@ -144,7 +142,8 @@ button {
 }
 
 .lang > li {
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
   width: 100%;
   align-items: flex-start;
   padding: 12px 20px;
@@ -233,6 +232,7 @@ nav {
   flex-direction: column;
   justify-content: flex-start;
   padding: 6rem 1.5rem;
+  background-color: #fff;
   border-bottom-left-radius: calc(10rem / 3);
 }
 
@@ -510,7 +510,7 @@ form > ul {
     gap: 3;
     flex-direction: column;
     width: 100%;
-    height: 100vh;
+    /* height: 50vh; */
     align-items: center;
     background-color: #fff;
     transform: 0.3s;
@@ -579,7 +579,7 @@ form > ul {
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
-    line-height: 20px;
+    /* line-height: 20px; */
   }
 
   .projects {
