@@ -24,7 +24,7 @@ body {
 }
 
 .after-body {
-z-index: 1;
+  z-index: 1;
 }
 
 li {
@@ -727,8 +727,6 @@ form > ul {
   }
 }
 
-
-
 .mobile-menu {
   background: #6070ff;
   opacity: 0.888;
@@ -737,7 +735,7 @@ form > ul {
   width: 100%;
   z-index: 9;
   position: fixed;
-  /* display: none; */
+  display: none;
 }
 
 .mobile-menu-items > li {

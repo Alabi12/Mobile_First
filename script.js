@@ -1,9 +1,9 @@
 function myFunction() {
-  const x = document.querySelector('.mobile-menu');
-  if (x.style.display === 'none') {
-    x.style.display = 'block';
+  const mobile = document.querySelector(".mobile-menu");
+  if (mobile.style.display === "none") {
+    mobile.style.display = "block";
   } else {
-    x.style.display = 'none';
+    mobile.style.display = "none";
   }
 }
 
