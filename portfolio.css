@@ -587,6 +587,22 @@ form > ul {
     padding: 12px 20px;
   }
 
+  .mobile-menu-items > li {
+    padding: 10px 10px;
+  }
+
+  .mobile-menu > ul {
+    margin-top: -10px;
+    list-style-type: none;
+  }
+
+  .mobile-menu-items > li > a {
+    color: #fff;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
   .card > .desktop-work-detail > .project_details > li {
     font-weight: 500;
     font-size: 18px;
@@ -731,27 +747,10 @@ form > ul {
   background: #6070ff;
   opacity: 0.888;
   height: 100%;
-  /* width: 382px; */
   width: 100%;
   z-index: 9;
   position: fixed;
   display: none;
-}
-
-.mobile-menu-items > li {
-  padding: 10px 10px;
-}
-
-.mobile-menu > ul {
-  margin-top: -10px;
-  list-style-type: none;
-}
-
-.mobile-menu-items > li > a {
-  color: #fff;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 44px;
 }
 
 .menu-cross {
