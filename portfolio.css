@@ -136,6 +136,17 @@ button {
   color: var(--bg-purple);
 }
 
+.mobile-menu-items > li {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  margin: 30px;
+}
+
+.mobile-menu-items > li > a {
+  color: #fff;
+}
+
 .socials {
   display: flex;
   width: 50%;
@@ -740,17 +751,6 @@ form > ul {
   width: 100%;
   z-index: 9;
   position: fixed;
-}
-
-.mobile-menu-items > li {
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 40px;
-  margin: 30px;
-}
-
-.mobile-menu-items > li > a {
-  color: #fff;
 }
 
 .menu-cross {
