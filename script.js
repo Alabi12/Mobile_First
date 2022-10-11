@@ -6,8 +6,8 @@ hamburger.addEventListener("click", () => {
   menuList.classList.toggle("active");
 });
 
-// document.querySelectorAll(".navLinks").forEach((n) => n.addEventListener("click", () => {
-//     hamburger.classList.remove("active");
-//     menuList.classList.remove("active");
+document.querySelectorAll(".navLinks").forEach((n) => n.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    menuList.classList.remove("active");
 
-// }));
+}));

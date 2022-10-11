@@ -491,6 +491,9 @@ form > ul {
 }
 
 @media (max-width: 768px) {
+  .active {
+    height: 100vh;
+  }
   .hamburger {
     display: block;
   }
