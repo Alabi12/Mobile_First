@@ -750,7 +750,14 @@ form > ul {
   width: 100%;
   z-index: 9;
   position: fixed;
-  display: none;
+  /* display: none; */
+}
+
+.mobile-menu-items > li > a {
+  color: #fff;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
 }
 
 .menu-cross {
