@@ -742,11 +742,15 @@ form > ul {
   position: fixed;
 }
 
+.mobile-menu-items > li {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  margin: 30px;
+}
+
 .mobile-menu-items > li > a {
   color: #fff;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 44px;
 }
 
 .menu-cross {
