@@ -49,13 +49,17 @@ a {
   cursor: pointer;
 }
 
+.logo:active {
+  display: none;
+}
+
 .bar {
   display: block;
   width: 25px;
   height: 3px;
   margin: 5px auto;
-  -webkit-transition: all o.3s ease-in-out;
-  transition: all o.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   background-color: #172b4d;
 }
 
@@ -65,9 +69,9 @@ a {
   gap: 24px;
 }
 
-#menuList {
+/* #menuList {
   display: flex;
-}
+} */
 
 h1 {
   color: var(--text-dark-blue);
@@ -143,7 +147,6 @@ button {
 
 .lang > li {
   flex-direction: row;
-  align-items: center;
   width: 100%;
   align-items: flex-start;
   padding: 12px 20px;
@@ -484,28 +487,33 @@ form > ul {
   display: none;
 }
 
-#menuList {
+/* #menuList {
   display: flex;
   min-height: 70px;
   justify-content: center;
-}
+} */
 
 @media (max-width: 768px) {
   .active {
     height: 100vh;
   }
+
   .hamburger {
     display: block;
   }
+
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
   }
+
   .hamburger.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
+
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
+
   #menuList {
     position: absolute;
     left: -100%;
@@ -513,7 +521,6 @@ form > ul {
     gap: 3;
     flex-direction: column;
     width: 100%;
-    /* height: 50vh; */
     align-items: center;
     background-color: #fff;
     transform: 0.3s;
@@ -569,6 +576,19 @@ form > ul {
     display: inline;
   }
 
+  .lang > li {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    padding: 12px 20px;
+  }
+
+  .card > .desktop-work-detail > .project_details > li {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
   #menuList > li {
     list-style-type: none;
     margin: 0;
@@ -582,7 +602,6 @@ form > ul {
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
-    /* line-height: 20px; */
   }
 
   .projects {
@@ -614,19 +633,6 @@ form > ul {
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
-  }
-
-  .lang > li {
-    flex-direction: column;
-    width: 100%;
-    align-items: flex-start;
-    padding: 12px 20px;
-  }
-
-  .card > .desktop-work-detail > .project_details > li {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
   }
 
   .reverse-work,
