@@ -268,7 +268,7 @@ nav {
   padding: 1.3rem 2rem;
 }
 
-.links_active {
+.link-clicked {
   list-style: none;
   position: absolute;
   left: 2rem;
@@ -278,7 +278,7 @@ nav {
   gap: 1rem;
 }
 
-.links_active a {
+.link-clicked a {
   color: white;
   font-weight: 600;
   font-size: 32px;
@@ -286,7 +286,7 @@ nav {
   transition: 0.2s;
 }
 
-.links_active a:hover {
+.link-clicked a:hover {
   color: var(--bg-dark-blue);
 }
 
