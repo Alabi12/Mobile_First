@@ -16,7 +16,7 @@
     />
     <link rel="stylesheet" href="portfolio.css" />
   </head>
-
+  <title>Javascript Form Validation</title>
   <body>
     <section class="details"></section>
     <nav id="navbar" class="flex bg-white">
@@ -139,7 +139,7 @@
         </li>
       </ul>
     </section>
-    <footer id="contact" class="bg-white flex">
+    <footer  id="contact" class="bg-white flex">
       <article class="footer__container flex">
         <h1>Contact me</h1>
         <p>
@@ -147,7 +147,7 @@
           that you need built or a project that needs coding. I’d love to help
           with it
         </p>
-        <form action="https://formspree.io/f/xeqdgnwv" method="post">
+        <form name="form" action="" class="main-contact-form">
           <ul class="form_fields">
             <li>
               <input
@@ -164,6 +164,7 @@
                 type="email"
                 name="email"
                 id="email"
+                class="email-address"
                 placeholder="Email"
                 required
               />
@@ -180,7 +181,12 @@
               ></textarea>
             </li>
             <li>
-              <button class="btn-class btn-class-contained" type="submit">
+              <p class="error-message"></p>
+              <button
+                class="btn-class btn-class-contained"
+                type="submit"
+                onclick="SubmitForm()"
+              >
                 Get in touch
               </button>
             </li>
