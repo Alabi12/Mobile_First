@@ -22,7 +22,7 @@ function handler() {
     navIcon.firstElementChild.id = "hamburger-icon";
   }
 
-  navMenuLinks.classList.toggle("links_active");
+  navMenuLinks.classList.toggle("link-clicked");
   navBar.classList.toggle("nav_active");
   body.classList.toggle("filter-container");
 }
@@ -42,7 +42,7 @@ window.addEventListener("resize", () => {
     link.addEventListener("click", handler);
   });
 
-  navMenuLinks.classList.remove("links_active");
+  navMenuLinks.classList.remove("link-clicked");
   navBar.classList.remove("nav_active");
   body.classList.remove("filter-container");
   navIcon.firstElementChild.src = "./img/hamburger-icon.svg";
