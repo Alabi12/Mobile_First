@@ -546,6 +546,7 @@ footer::after {
   }
 }
 
+/* contact error message */
 .error-message {
   color: #fff;
   font-size: 12px;
