@@ -548,7 +548,7 @@ footer::after {
 
 /* contact error message */
 .error-message {
-  color: #fff;
+  color: greenyellow;
   font-size: 12px;
 }
 
