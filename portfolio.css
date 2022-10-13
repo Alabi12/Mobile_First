@@ -547,7 +547,7 @@ footer::after {
 }
 
 .error-message {
-  color: #fff;
+  color: greenyellow;
   font-size: 12px;
 }
 
