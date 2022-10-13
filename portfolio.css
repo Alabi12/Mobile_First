@@ -546,6 +546,11 @@ footer::after {
   }
 }
 
+.error-message {
+  color: #fff;
+  font-size: 12px;
+}
+
 @media screen and (max-width: 1000px) {
   /* Projects Section */
 
