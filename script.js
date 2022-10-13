@@ -50,16 +50,29 @@ window.addEventListener("resize", () => {
   body.style.overflowY = "scroll";
 });
 
-const contactForm = document.querySelector('.main-contact-form');
-const emailInput = document.querySelector('.email-address');
-const validationMessage = document.querySelector('.error-message');
-contactForm.addEventListener('submit', (event) => {
+const contactForm = document.querySelector(".main-contact-form");
+const emailInput = document.querySelector(".email-address");
+const validationMessage = document.querySelector(".error-message");
+contactForm.addEventListener("submit", (event) => {
   const strInput = emailInput.value;
   if (/[A-Z]/.test(strInput)) {
-    validationMessage.innerHTML = 'Your email address should not contain upper case letters';
-    validationMessage.classList.add('shake');
+    validationMessage.innerHTML =
+      "Your email address should not contain upper case letters";
+    validationMessage.classList.add("shake");
     event.preventDefault();
   }
 });
 
+addEventListener("input", () => {
+  const Data = {
+    FullName: document.querySelector(".full-name").value,
+    EmailAdress: document.querySelector(".email-address").value,
+    TextArea: document.querySelector(".textarea").value,
+  };
+  localStorage.setItem("LocalFormStorage", JSON.stringify(Data));
+});
 
+const StoredData = JSON.parse(localStorage.getItem("LocalFormStorage"));
+document.querySelector(".full-name").value = StoredData.FullName;
+document.querySelector(".email-address").value = StoredData.EmailAdress;
+document.querySelector(".textarea").value = StoredData.TextArea;
