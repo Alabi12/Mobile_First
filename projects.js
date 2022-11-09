@@ -13,6 +13,8 @@ const projects = [
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required.",
     technologies: ["HTML", "CSS", "Javascript"],
+    demo: "",
+    source: "",
   },
   {
     img: {
@@ -24,6 +26,8 @@ const projects = [
     description:
       "Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.",
     technologies: ["HTML", "Ruby on Rails", "CSS", "Javascript"],
+    demo: "",
+    source: "",
   },
   {
     img: {
@@ -35,6 +39,8 @@ const projects = [
     description:
       "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
     technologies: ["HTML", "Ruby on Rails", "CSS", "Javascript"],
+    demo: "",
+    source: "",
   },
   {
     img: {
@@ -46,6 +52,21 @@ const projects = [
     description:
       "A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.",
     technologies: ["HTML", "Ruby on Rails", "CSS", "Javascript"],
+    demo: "",
+    source: "",
+  },
+  {
+    img: {
+      src: "./img/project-5-desktop.jpg",
+      alt: "To Do project preview",
+    },
+    title: "To Do Project",
+    type: ["CANOPY", "BACKEND DEV", "2022"],
+    description:
+      "This is a simple project that allow the user to develop the Todo List. The data is persisted in the local storage.",
+    technologies: ["HTML", "Webpack", "CSS", "Javascript"],
+    demo: "https://alabi12.github.io/To-Do-List/dist/",
+    source: "https://github.com/Alabi12/To-Do-List",
   },
 ];
 
@@ -69,16 +90,19 @@ const generatePopupSection = (project) => `
             <ul class="flex project_coding_langs">
               ${generateList(project.technologies)}
             </ul>
-            <div class="flex gap">
-              <button class="btn-class btn-outlined project_details_btn">
-                <span>See live</span>
-                <img src="./img/liveArrow.svg" alt="link to live demo" />
+            <div class="flex gap project_links">
+            <button linkto="${
+              project.demo ? new URL(project.demo) : ""
+            }" class="btn-primary btn-outlined project_details_btn">
+              <span>See live</span>
+              <img src="./img/liveArrow.svg" alt="link to live demo" />
               </button>
-              <button class="btn-class btn-outlined project_details_btn">
-                <span>See source</span>
-                <img src="./img/github.svg" alt="link to github code" />
-              </button>
-            </div>
+            <button linkto="${
+              project.source ? new URL(project.source) : ""
+            }" class="btn-primary btn-outlined project_details_btn">
+           <span>See source</span>
+           <img src="./img/github.svg" alt="link to github code" />
+            </button>
           </div>
         </div>
       </article>
@@ -101,6 +125,11 @@ const generateCard = (project, id) => `
         <button id=${id} class="project-detail btn-class btn-outlined">See Project</button>
       </article>
     </section>`;
+
+const openURLInNewTab = (url) => {
+  if (!url) return;
+  window.open(url, "_blank");
+};
 
 window.onload = () => {
   projects.forEach((project, index) => {
@@ -135,6 +164,17 @@ window.onload = () => {
         docBody.classList.toggle("filter-container_details");
         popupContainer.classList.toggle("show");
         docBody.style.overflowY = "scroll";
+      });
+
+      const linksBtns = document.querySelector(".project_links");
+
+      linksBtns.childNodes.forEach((btn) => {
+        btn.addEventListener("click", (ev) => {
+          if (ev.target.nodeName === "BUTTON")
+            return openURLInNewTab(ev.target.getAttribute("linkto"));
+          const btnEl = ev.target.closest("button");
+          return openURLInNewTab(btnEl.getAttribute("linkto"));
+        });
       });
     });
   });
