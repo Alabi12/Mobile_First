@@ -45,6 +45,11 @@ Clone the repository and use a browser to open the index.html to view the portfo
 - Twitter: [@wolo_robert](https://twitter.com/wolo_robert)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/robert-o-alabi-49ba4b184)
 
+👤 **Author2**
+
+- GitHub: [@githubhandle](https://github.com/xrichardroidx)
+- Twitter: [@twitterhandle](https://twitter.com/RichardroiDX)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/richard-oguzie-ibeh-b4a975231/?originalSubdomain=ng)
 
 ## 🤝 Contributing
 
