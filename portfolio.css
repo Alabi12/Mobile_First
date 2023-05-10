@@ -27,6 +27,63 @@ body {
   overflow-x: hidden;
 }
 
+<<<<<<< HEAD
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  background-color: #fff;
+}
+
+.navLinks {
+  transition: 0.7s ease;
+}
+
+.navLinks:hover {
+  color: dodgerblue;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.logo {
+  visibility: visible;
+}
+
+.logo-responsive {
+  visibility: hidden;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #172b4d;
+}
+
+#menuList {
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+/* #menuList {
+  display: flex;
+} */
+
+=======
+>>>>>>> e79a8c471a6a300fcec8233b097186f6c364e464
 h1 {
   color: var(--text-dark-blue);
   font-size: 40px;
