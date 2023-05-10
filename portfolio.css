@@ -574,18 +574,17 @@ footer::after {
 
   .dropdown_item {
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     background-color: #f7f7f9;
-    padding: 0.5rem;
-    width: 100%;
+    width: 50%;
+    margin: auto;
     border-radius: 8px;
   }
 
   img {
-    width: 80%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     margin: auto; /* Change the color to red */
   }
 
@@ -671,6 +670,7 @@ footer::after {
     min-width: 327px;
     flex-direction: row-reverse;
     justify-content: center;
+    transition: all 0.3s ease-in-out;
   }
 
   .card:nth-child(2n + 1) {
@@ -680,6 +680,10 @@ footer::after {
   .card > article {
     padding: 1.5rem 0 1.5rem 1.5rem;
     gap: 18px;
+  }
+
+  .animate-card {
+    transform: translateY(100%);
   }
 
   /* About Section */
