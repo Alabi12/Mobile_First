@@ -1,4 +1,4 @@
-/* General Styles */
+/* stylelint-disable no-descending-specificity */
 
 :root {
   --bg-purple: #6070ff;
@@ -314,10 +314,9 @@ nav {
 .details {
   display: none;
   position: fixed;
-  min-height: 100vh;
-  width: 100%;
-  z-index: 11;
-  background-color: #c1c7d0d9;
+  min-height: 50vh;
+  width: 80%;
+  z-index: 13;
 }
 
 .section_detail_wrapper {
@@ -325,7 +324,8 @@ nav {
   min-height: max-content;
   max-height: 95vh;
   max-width: 90%;
-  width: 1000px;
+  width: 80%;
+  margin: auto;
   overflow-y: scroll;
   border: 1px solid #ebecf0;
   box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
@@ -354,11 +354,17 @@ nav {
 
 .close-detail {
   cursor: pointer;
+  height: 80px;
+  width: 80px;
 }
 
 .project_details_btn {
   display: flex;
   gap: 8px;
+}
+
+.live-link-img {
+  font-size: 20px;
 }
 
 /* Projects - Card */
@@ -452,6 +458,11 @@ nav {
   padding: 1.5rem;
   width: 180px;
   border-radius: 8px;
+}
+
+img {
+  width: 50%;
+  margin: auto; /* Change the color to red */
 }
 
 /* Footer Section */
@@ -565,11 +576,32 @@ footer::after {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    gap: 10px;
     background-color: #f7f7f9;
     padding: 0.5rem;
     width: 100%;
     border-radius: 8px;
+  }
+
+  img {
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    margin: auto; /* Change the color to red */
+  }
+
+  .about_stacks__item__content {
+    display: none;
+  }
+
+  .about_stacks__item__content.show {
+    display: block;
+  }
+
+  .about_stacks__item__content span {
+    display: flex;
+    align-items: flex-end;
+    padding: 5px;
+    font-size: 12px;
   }
 }
 
@@ -665,6 +697,23 @@ footer::after {
   .about__stacks {
     width: 55%;
     min-width: 250px;
+  }
+
+  .about_stacks__item__content {
+    display: none;
+    align-items: flex-end;
+  }
+
+  .about_stacks__item__content.show {
+    display: block;
+    font-size: 12px;
+    gap: 5rem;
+  }
+
+  .about_stacks__item__content span {
+    background-color: #f2f2f2;
+    padding: 5px 7px;
+    font-size: 18px;
   }
 
   /* Footer Section */
