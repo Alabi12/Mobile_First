@@ -1,17 +1,19 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function () {
   const hamburger = document.querySelector(".hamburger");
   const menuList = document.querySelector("#menuList");
   const logo = document.getElementById("id-logo");
 
-  hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("active");
-    menuList.classList.toggle("active");
-    if (logo.className === "logo") {
-      logo.className = "logo-responsive";
-    } else {
-      logo.className = "logo";
-    }
-  });
+  if (hamburger && menuList && logo) {
+    hamburger.addEventListener("click", function () {
+      hamburger.classList.toggle("active");
+      menuList.classList.toggle("active");
+      if (logo.className === "logo") {
+        logo.className = "logo-responsive";
+      } else {
+        logo.className = "logo";
+      }
+    });
+  }
 });
 
 document.querySelectorAll(".navLinks").forEach((n) =>
