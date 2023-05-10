@@ -1,3 +1,4 @@
+/* stylelint-disable rule-empty-line-before */
 /* stylelint-disable no-descending-specificity */
 
 :root {
@@ -671,6 +672,11 @@ footer::after {
     flex-direction: row-reverse;
     justify-content: center;
     transition: all 0.3s ease-in-out;
+  }
+
+  .card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
 
   .card:nth-child(2n + 1) {

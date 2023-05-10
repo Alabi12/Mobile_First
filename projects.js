@@ -174,3 +174,20 @@ projectBtns.forEach((btn, index) => {
   githubLink.textContent = "GitHub";
   btn.parentNode.appendChild(githubLink);
 });
+
+// Animation on the project cards
+
+function isInViewport(element) {
+  const rect = element.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+  );
+}
+
+document.addEventListener("scroll", function () {
+  const projects = document.getElementById("portfolio");
+  if (isInViewport(projects)) {
+    projects.classList.add("animate");
+  }
+});
