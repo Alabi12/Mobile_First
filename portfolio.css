@@ -27,7 +27,6 @@ body {
   overflow-x: hidden;
 }
 
-<<<<<<< HEAD
 li {
   list-style: none;
 }
@@ -82,8 +81,6 @@ a {
   display: flex;
 } */
 
-=======
->>>>>>> e79a8c471a6a300fcec8233b097186f6c364e464
 h1 {
   color: var(--text-dark-blue);
   font-size: 40px;
@@ -142,9 +139,9 @@ input {
   height: 48px;
 }
 
-a {
+/* a {
   text-decoration: none;
-}
+} */
 
 ul {
   padding: 0.5rem 0;
