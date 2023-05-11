@@ -16,6 +16,7 @@ const projects = [
     liveLink: "https://alabi12.github.io/Awesome-Books-ES6/",
     githubLink: "https://github.com/Alabi12/Awesome-Books-ES6",
   },
+
   {
     img: {
       src: "./img/BudgetAppImg.png",

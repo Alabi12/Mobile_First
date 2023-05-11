@@ -125,13 +125,15 @@ function toggleLanguages() {
     }
 
     languages.forEach((lang) => {
-      const li = document.createElement("li");
-      li.classList.add("dropdown_item", "flex");
-      li.innerHTML = `
-        <img src="./img/${lang.toLowerCase()}.svg" alt="${lang} icon" />
-        <span>${lang}</span>
-      `;
-      list.appendChild(li);
+      if (typeof lang === "string") {
+        const li = document.createElement("li");
+        li.classList.add("dropdown_item", "flex");
+        li.innerHTML = `
+          <img src="./img/${lang.toLowerCase()}.svg" alt="${lang} icon" />
+          <span>${lang}</span>
+        `;
+        list.appendChild(li);
+      }
     });
   } else {
     // Add the "hidden" class to the list
