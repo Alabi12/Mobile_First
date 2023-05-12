@@ -5,47 +5,57 @@ const popupContainer = document.querySelector(".details");
 const projects = [
   {
     img: {
-      src: "./img/project-1-desktop.png",
-      alt: "tonic project preview",
+      src: "./img/awsomebooks.png",
+      alt: "Awesome Books preview",
     },
-    title: "Tonic",
-    type: ["CANOPY", "BACKEND DEV", "2015"],
+    title: "Awesome Books",
+    type: ["Books Application", "Frontend Dev", "2023"],
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+      "This is a project that takes in a new book by a user, stores to local storage, and displays it on the browser. The user also has the opportunity to edit and delete the books stored.",
     technologies: ["HTML", "CSS", "Javascript"],
+    liveLink: "https://alabi12.github.io/Awesome-Books-ES6/",
+    githubLink: "https://github.com/Alabi12/Awesome-Books-ES6",
   },
+
   {
     img: {
-      src: "./img/project-2-desktop.png",
-      alt: "Multi-Post Stories project preview",
+      src: "./img/BudgetAppImg.png",
+      alt: "Budget App project preview",
     },
-    title: "Multi-Post Stories",
-    type: ["FACEBOOK", "Full Stack Dev", "2015"],
+    title: "Budget App",
+    type: ["Budget Application", "Full Stack Dev", "2023"],
     description:
-      "Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.",
-    technologies: ["HTML", "Ruby on Rails", "CSS", "Javascript"],
+      "This project is about building a mobile web application where you can manage your budget. You will have a list of transactions associated with a category, so you can see how much money you have spent and on what",
+    technologies: ["Ruby on Rails", "CSS"],
+    liveLink: "https://budget-app-m3yc.onrender.com/",
+    githubLink: "https://github.com/Alabi12/Budget-App",
   },
+
   {
     img: {
-      src: "./img/project-3-desktop.png",
+      src: "./img/spacetravelapp.png",
       alt: "Facebook 360 project preview",
     },
-    title: "Facebook 360",
-    type: ["CANOPY", "BACKEND DEV", "2015"],
+    title: "Space Travel's Hub",
+    type: ["Space Travel", "Frontend Dev", "2023"],
     description:
-      "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
-    technologies: ["HTML", "Ruby on Rails", "CSS", "Javascript"],
+      "This is a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions. The application works with real-time data from the SpaceX API.",
+    technologies: ["HTML", "CSS", "Javascript"],
+    liveLink: "https://space-travel-pearl.vercel.app/",
+    githubLink: "https://github.com/Alabi12/space-travel",
   },
   {
     img: {
-      src: "./img/project-4-desktop.png",
-      alt: "Uber Navigation project preview",
+      src: "./img/todoapp1.png",
+      alt: "Todo App project preview",
     },
-    title: "Uber Navigation",
-    type: ["UBER", "Lead Developer", "2018"],
+    title: "Todo",
+    type: ["Todo", "Frontend Dev", "2022"],
     description:
-      "A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.",
-    technologies: ["HTML", "Ruby on Rails", "CSS", "Javascript"],
+      "This is a simple project that allows the user to develop a Todo List. The data is persisted in local storage",
+    technologies: ["HTML", "CSS", "Javascript"],
+    liveLink: "https://alabi12.github.io/To-Do-List/dist/",
+    githubLink: "https://github.com/Alabi12/To-Do-List",
   },
 ];
 
@@ -60,7 +70,7 @@ const generatePopupSection = (project) => `
           <img class="close-detail" src="./img/close-detail.svg" alt="Close project details" />
         </div>
         <ul class="flex project_details">
-         ${generateList(project.type)}
+        ${generateList(project.type)}
         </ul>
         <img src=${project.img.src} alt=${project.img.alt} />
         <div class="project_description__container">
@@ -70,14 +80,19 @@ const generatePopupSection = (project) => `
               ${generateList(project.technologies)}
             </ul>
             <div class="flex gap">
-              <button class="btn-class btn-outlined project_details_btn">
-                <span>See live</span>
-                <img src="./img/liveArrow.svg" alt="link to live demo" />
-              </button>
-              <button class="btn-class btn-outlined project_details_btn">
-                <span>See source</span>
-                <img src="./img/github.svg" alt="link to github code" />
-              </button>
+            <button class="btn-class btn-outlined project_details_btn">
+            <a href=${project.liveLink} target="_blank">
+              <span>See live</span>
+              <img src="./img/liveArrow.svg" alt="link to live demo" style="width: 20px; height: 20px;" />
+            </a>
+            </button>
+            <button class="btn-class btn-outlined project_details_btn">
+            <a href=${project.githubLink} target="_blank">
+              <span>View on GitHub</span>
+              <img src="./img/github.svg" alt="link to GitHub repository" style="width: 20px; height: 20px;"/>
+            </a>
+          </button>
+          
             </div>
           </div>
         </div>
@@ -145,3 +160,35 @@ window.onload = () => {
     docBody.style.overflowY = "scroll";
   };
 };
+
+//Display detail project links
+
+const projectBtns = document.querySelectorAll(".project_details_btn");
+projectBtns.forEach((btn, index) => {
+  btn.querySelector("span").textContent = "See live";
+  btn.querySelector("img").setAttribute("src", "./img/liveArrow.svg");
+  btn.addEventListener("click", () => {
+    window.location.href = projects[index].liveLink;
+  });
+  const githubLink = document.createElement("a");
+  githubLink.setAttribute("href", projects[index].githubLink);
+  githubLink.textContent = "GitHub";
+  btn.parentNode.appendChild(githubLink);
+});
+
+// Animation on the project cards
+
+function isInViewport(element) {
+  const rect = element.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+  );
+}
+
+document.addEventListener("scroll", function () {
+  const projects = document.getElementById("portfolio");
+  if (isInViewport(projects)) {
+    projects.classList.add("animate");
+  }
+});

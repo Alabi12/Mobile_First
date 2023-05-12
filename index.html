@@ -18,57 +18,58 @@
   </head>
 
   <body>
-    <header>
-      <nav class="navbar">
-        <a class="logo" href="#">My Logo</a>
-        <ul id="menuList">
-          <li><a href="#mheadline" class="navLinks">Portoflio</a></li>
-          <li><a href="#projects" class="navLinks">About</a></li>
-          <li><a href="#container" class="navLinks">Contact</a></li>
-        </ul>
-        <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-      </nav>
-    </header>
-    
-    <section class="mheadline" id="mheadline">
-      <div class="text-container">
+    <section class="details"></section>
+    <nav id="navbar" class="flex bg-white">
+      <a id="title" href="#">WorankCode</a>
+      <div id="nav-icon" class="nav_icon__container">
+        <img
+          id="hamburger-icon"
+          alt="hamburger icon"
+          src="img/hamburger-icon.svg"
+        />
+      </div>
+      <ul id="nav-menu-links" class="nav_menu__container">
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <section class="headline bg-white">
+      <article>
         <h1>
-          I'm Robert <br />
-          Glad to see <br />
-          you!
+          Welcome <br />
+          to my Portfolio!
         </h1>
         <p>
-          I'm a software developer! I can help you build a product , feature or
-          website Look through some of my work and experience! If you like what
-          you see and have a project you need coded, don't hestiate to contact
-          me.
+          I'm Robert, a software developer. I'm excited to have you here and offer my assistance in building a website, product, or feature. Feel free to explore my work and experiences.
         </p>
         <div class="socials__container">
           <h6>LET'S CONNECT</h6>
           <ul class="icons_social__container flex">
             <li>
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="https://twitter.com/wolo_robert"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
             </li>
             <li>
-              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://www.linkedin.com/in/robert-alabi/"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
             </li>
             <li>
-              <a href="https://github.com/Alabi12"><i class="fa-brands fa-github"></i></a>
+              <a href="https://github.com/Alabi12"
+                ><i class="fa-brands fa-github"></i
+              ></a>
             </li>
             <li>
-              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://web.facebook.com/robert.alabi.752"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
             </li>
           </ul>
         </div>
       </article>
-    </main>
+    </section>
     <section id="portfolio" class="projects"></section>
     <section id="about" class="about bg-white">
       <article>
@@ -86,58 +87,84 @@
           <h6>LET'S CONNECT</h6>
           <ul class="icons_social__container flex">
             <li>
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="https://twitter.com/wolo_robert" type="twitter"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
             </li>
             <li>
-              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://www.linkedin.com/in/robert-alabi/" type="linkedin"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
             </li>
             <li>
-              <a href="#"><i class="fa-brands fa-github"></i></a>
+              <a href="https://github.com/Alabi12" type="github"
+                ><i class="fa-brands fa-github"></i
+              ></a>
             </li>
             <li>
-              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://web.facebook.com/robert.alabi.752" type="facebook"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
             </li>
           </ul>
         </div>
-        <button class="btn-class btn-outlined">Get My Resume</button>
+        <button class="btn-class btn-outlined" type="button">
+          <a
+            href="https://docs.google.com/document/d/1z_Wg5F7yjjUk0JLUlTl_D3fntw9von5kE9m3BJ-XW4s/edit"
+            download
+            target="_blank"
+            type="download"
+            rel="noopener"
+            >Get My Resume</a
+          >
+        </button>
       </article>
       <ul class="about__stacks">
         <li>
           <div class="about_stacks__item">
             <span>Languages</span>
-            <i class="fa-solid fa-chevron-down"></i>
+            <i id="language-icon" class="fa-solid fa-chevron-down"></i>
           </div>
           <ul class="stack_item__dropdown flex">
             <li class="dropdown_item flex">
-              <img src="./img/javascript.svg" alt="javascript icon" />
-              <span>Javascript</span>
+              <img src="./img/react.png" alt="React icon" />
+              <span>REACT</span>
+            </li>
+            <li class="dropdown_item flex">
+              <img src="./img/ruby.jpeg" alt="Ruby icon" />
+              <span>RUBY</span>
+            </li>
+            <div class="dropdown_item flex">
+              <img src="./img/rails.png" alt="Ruby on Rails icon" />
+              <span>RAILS</span>
+            </div>
+            <li class="dropdown_item flex">
+              <img src="./img/javascript.svg" alt="Javascript icon" />
+              <span>JAVASCRIPT</span>
             </li>
             <li class="dropdown_item flex">
               <img src="./img/html.svg" alt="HTML icon" />
               <span>HTML</span>
             </li>
-            <li class="dropdown_item flex">
-              <img src="./img/css.svg" alt="CSS icon" />
-              <span>CSS</span>
-            </li>
           </ul>
-        </li>
-        <li>
-          <div class="about_stacks__item">
-            <span>Frameworks</span>
-            <i class="fa-solid fa-chevron-right"></i>
-          </div>
-        </li>
-        <li>
-          <div class="about_stacks__item">
-            <span>Skills</span>
-            <i class="fa-solid fa-chevron-right"></i>
-          </div>
-        </li>
-      </ul>
+          <div class="about_stacks">
+            <ul class="about_stacks">
+              <li>
+                <div class="about_stacks__item">
+                  <span>Frameworks</span>
+                  <div class="about_stacks__item__content"></div>
+                  <i class="fa-solid fa-chevron-right toggle-icon"></i>
+                </div>
+              </li>
+              <li>
+                <div class="about_stacks__item">
+                  <span>Skills</span>
+                  <div class="about_stacks__item__content"></div>
+                  <i class="fa-solid fa-chevron-right toggle-icon"></i>
+                </div>
+              </li>
+            </ul>
+          </div> 
     </section>
     <footer id="contact" class="bg-white flex">
       <article class="footer__container flex">

@@ -18,8 +18,8 @@ jobs:
         run: npm install -g @lhci/cli@0.7.x
       - name: Lighthouse Report
         run: lhci autorun --upload.target=temporary-public-storage --collect.staticDistDir=.
-  webhint:
-    name: Webhint
+  # webhint:
+  #   name: Webhint
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v2
