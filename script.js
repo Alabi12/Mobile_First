@@ -158,7 +158,7 @@ icon.addEventListener("click", toggleLanguages);
 const toggleIcons = document.querySelectorAll(".toggle-icon");
 
 const contentArr = [
-  [{ name: "REACT" }, { name: "RUBY" }, { name: "RAILS" }],
+  [{ name: "JAVASCRIPT" }, { name: "RUBY" }, { name: "POSTGRESQL" }],
 
   [
     { name: "COMMUNICATION" },

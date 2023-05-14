@@ -380,7 +380,7 @@ nav {
   min-height: max-content;
   max-height: 95vh;
   max-width: 90%;
-  width: 80%;
+  width: 100%;
   margin: auto;
   overflow-y: scroll;
   border: 1px solid #ebecf0;
@@ -410,8 +410,14 @@ nav {
 
 .close-detail {
   cursor: pointer;
-  height: 80px;
-  width: 80px;
+  height: 20px;
+  width: 20px;
+}
+
+.close-detail:hover {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
 }
 
 .project_details_btn {
@@ -518,7 +524,7 @@ nav {
 
 img {
   width: 50%;
-  margin: auto; /* Change the color to red */
+  /* margin: auto; Change the color to red */
 }
 
 /* Footer Section */
