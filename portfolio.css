@@ -781,6 +781,7 @@ footer::after {
     display: block;
     font-size: 12px;
     gap: 5rem;
+    align-items: flex-end;
   }
 
   .about_stacks__item__content span {

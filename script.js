@@ -161,9 +161,10 @@ const contentArr = [
   [{ name: "JAVASCRIPT" }, { name: "RUBY" }, { name: "POSTGRESQL" }],
 
   [
-    { name: "COMMUNICATION" },
-    { name: "PAIR-PROGRAMMING" },
-    { name: "COLLABORATION " },
+    { name: "Remote Pair-Programming" },
+    { name: "Teamwork" },
+    { name: "Mentoring" },
+    { name: "Leadership" },
   ],
 ];
 
