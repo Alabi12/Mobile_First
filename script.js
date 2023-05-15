@@ -198,3 +198,36 @@ toggleIcons.forEach((icon, index) => {
     }
   });
 });
+
+// form
+
+const form = document.getElementById("myForm");
+const messageDiv = document.getElementById("submittedMessage");
+
+form.addEventListener("submit", function (event) {
+  event.preventDefault(); // prevent form submission
+
+  // Get form data
+  const formData = new FormData(form);
+  const name = formData.get("name");
+  const email = formData.get("email");
+
+  // Save form data to local storage
+  localStorage.setItem("name", name);
+  localStorage.setItem("email", email);
+
+  form.reset(); // clear the form
+
+  // Do form submission logic here
+
+  messageDiv.textContent = "Form submitted successfully!";
+  form.reset(); // clear the form
+});
+
+// Populate form fields from local storage on page load
+const storedName = localStorage.getItem("name");
+const storedEmail = localStorage.getItem("email");
+if (storedName && storedEmail) {
+  document.getElementById("name").value = storedName;
+  document.getElementById("email").value = storedEmail;
+}

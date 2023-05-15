@@ -140,6 +140,10 @@ input {
   height: 48px;
 }
 
+#submittedMessage {
+  color: green;
+}
+
 /* a {
   text-decoration: none;
 } */
@@ -378,7 +382,7 @@ nav {
   background-color: white;
   min-height: max-content;
   max-height: 95vh;
-  max-width: 90%;
+  max-width: 80%;
   width: 100%;
   margin: auto;
   overflow-y: scroll;
@@ -392,6 +396,7 @@ nav {
 .section_detail {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 12px;
   padding: 1rem;
 }
@@ -784,6 +789,15 @@ footer::after {
     font-size: 18px;
   }
 
+  .close-detail {
+    position: relative;
+    top: 7%;
+    left: 80%;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+  }
+
   /* Footer Section */
 
   .footer__container {
@@ -799,5 +813,11 @@ footer::after {
 
   footer::after {
     display: none;
+  }
+
+  #submittedMessage {
+    display: flex;
+    align-items: center;
+    color: green;
   }
 }

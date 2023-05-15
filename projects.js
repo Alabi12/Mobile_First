@@ -39,7 +39,7 @@ const projects = [
     title: "Space Travel's Hub",
     type: ["Space Travel", "Frontend Dev", "2023"],
     description:
-      "This is a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions. The application works with real-time data from the SpaceX API.",
+      "This is a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions, and it works with real-time data from the SpaceX API.",
     technologies: ["HTML", "CSS", "Javascript"],
     liveLink: "https://space-travel-pearl.vercel.app/",
     githubLink: "https://github.com/Alabi12/space-travel",
@@ -52,7 +52,7 @@ const projects = [
     title: "Todo",
     type: ["Todo", "Frontend Dev", "2022"],
     description:
-      "This is a simple project that allows the user to develop a Todo List. The data is persisted in local storage",
+      "This is a simple project that allows the user to develop a Todo List, with the data persisted in local storage.",
     technologies: ["HTML", "CSS", "Javascript"],
     liveLink: "https://alabi12.github.io/To-Do-List/dist/",
     githubLink: "https://github.com/Alabi12/To-Do-List",
